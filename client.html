@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients - Prakash Enterprises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Header Styles */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 20px;
+        font-family: "Lora", serif;
+        font-style: italic;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        margin-right: 66px;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .search,
+    .shop {
+        margin-right: 20px;
+    }
+
+    .icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .banner-svg1 {
+        position: relative;
+        max-width: 100%;
+    }
+    
+    .banner-svg1 svg {
+        width: 100%;
+        height: auto;
+    }
+
+    .svg-container {
+        width: 100%;
+        height: 100%;
+    }
+    .svg-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+      background-color: #ffffff00;
+      padding: 20px;
+      border-radius: 0px;
+      box-shadow: 0 0 0px rgba(152, 152, 152, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      position: absolute;
+      width: 501.55px;
+      height: 383.07px;
+      left: 854.18px;
+      top: 6920.69px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    input[type="text"], input[type="email"]{
+      width: calc(100% - 20px);
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #191919;
+      border-radius: 5px;
+    }
+
+    input[type="tel"]{
+      width: calc(100% - 220px);
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #191919;
+      border-radius: 5px;
+    }
+
+    input[type="number"]{
+      width: calc(100% - 270px);
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #191919;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      width: calc(100% - 20px);
+
+      padding: 15px;
+      margin-bottom: 15px;
+      display: block;
+      margin-left: 0;
+      margin-right: auto;
+      border-radius: 5px;
+      background: linear-gradient(#5E9098, #BBF0F8);
+      font-family: "Lora", serif;
+      font-weight: 600;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #7FCBEF;
+    }
+    
+    .container1 {
+        width: calc(100% - 1000px); /* Adjusted width */
+        margin: 50px auto;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        position: absolute;
+        height: 500.07px;
+        left: 134.18px;
+        top: 7500.69px;
+        font-family: "Lora", serif;
+        font-weight: 600;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        padding: 15px;
+        border: 2px solid #1e1e1e;
+        border-radius: 10px;
+    }
+
+    textarea {
+        height: 220px;
+        /* width: 200px; Remove this line */
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+ 
+    button:hover {
+        background-color:#5E9098;
+    }
+
+    .allprojects button{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1.08735px 17.3976px;
+        gap: 5.44px;
+
+        position: absolute;
+        width: 160.8px;
+        height: 43.17px;
+        left: 1100px;
+        top: 8100.89px;
+
+        background: #7FCBEF;
+        border: 0.271837px solid #000000;
+        box-shadow: 0px 2.1747px 2.1747px rgba(0, 0, 0, 0.25);
+        border-radius: 13.0482px;
+    }
+    
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Lora', serif; /* Assuming 'Lora' is imported or available */
+        text-align: center; /* Center align text horizontally */
+
+        position: absolute;
+        left: 900px;
+        top: 8330.97px;
+
+    }
+
+    .container-footer a {
+        margin: 15px; /* Add some space between links */
+        text-decoration: none; /* Remove default underline */
+        color: rgb(255, 255, 255); /* Set link color */
+    }
+
+    .booknow button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 5.55px;
+        gap: 2px;
+
+        position: absolute;
+        width: 325px;
+        height: 48.77px;
+        left: calc(50% - 400px/2 + 610.5px);
+        top: 110px;
+
+        background: #153a7d;
+        box-shadow: 0px 2.76572px 2.76572px rgba(0, 0, 0, 0.25);
+        border-radius: 12.4457px;
+        color: #ffffff;
+        font-family: 'lora', sans-serif;
+    }
+
+</style>
+
+
+<body>
+    <!-- Header Section -->
+    <header class="header"> 
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo-bookmark">
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="ourservices.html">OUR SERVICES</a>
+            <a href="client.html">OUR CLIENT</a>
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+
+        <div class="icons">
+            <div class="search">
+                <img src="assets/icon-search.png" alt="icon-search">
+            </div>
+            <div class="shop">
+                <img src="assets/icon-shop.png" alt="icon-shop">
+            </div>
+        </div>
+    </header>
+
+    <div class="svg-container">
+        <object type="image/svg+xml" data="assets/client.svg" class="svg-content">
+        </object>
+    </div>
+
+    <div class="svg-container" id="footer">
+        <object type="image/svg+xml" data="assets/client-footer.svg" class="svg-content"></object>
+    </div>
+    
+    <div class="booknow">
+        <button class="button-3" role="button" onclick="scrollToFooter()" >Book Our Free Consultancy</button>
+    </div>
+
+    <div class="container">
+        <input type="text" name="full_name" placeholder="Full Name" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="tel" name="phone_number" placeholder="Phone Number" required><br>
+        <input type="number" name="pin_code" placeholder="PIN Code" required><br>
+        <button type="submit" value="Book Now">Book Now</button>
+    </div>
+
+    <div class="allprojects">
+        <button class="button-1" role="button">All Projects</button>
+    </div>
+
+    <div class="container1">
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject*</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          </div>
+          <button class="button-2" type="submit1">Submit</button>
+        </form>
+    </div>
+
+    <div class="container-footer">
+        <a href="aboutus.html">ABOUT</a>
+        <a href="ourservices.html">OUR SERVICES</a>
+        <a href="client.html">OUR CLIENTS</a>
+        <a href="contactus.html">CONTACT US</a>
+    </div>    
+
+</body>
+
+<script>
+    function scrollToFooter() {
+        var footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</html>
+        
